@@ -23,6 +23,7 @@ namespace ExileFinder
         public DemoForm()
         {
             InitializeComponent();
+            foo.Template = FindResource("Panel1") as ControlTemplate;
         }
     }
 }

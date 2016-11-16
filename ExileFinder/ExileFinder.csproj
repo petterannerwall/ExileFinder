@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Overlay.NET.dll" />
+    <Content Include="Process.NET.dll" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="DemoForm.xaml">

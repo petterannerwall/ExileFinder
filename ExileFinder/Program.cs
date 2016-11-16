@@ -33,10 +33,8 @@ namespace ExileFinder
         [STAThread]
         static void Main(string[] args)
         {
-            var handle = GetConsoleWindow();
-
-            // Hide
-            ShowWindow(handle, SW_HIDE);
+            //var handle = GetConsoleWindow();
+            //ShowWindow(handle, SW_HIDE);
 
 
             var process = System.Diagnostics.Process.GetProcessesByName("Notepad").FirstOrDefault();
