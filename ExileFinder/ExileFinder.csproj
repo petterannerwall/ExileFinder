@@ -63,6 +63,8 @@
     </Compile>
     <Compile Include="SurfaceButton.cs" />
     <Compile Include="Switcher.cs" />
+    <Compile Include="Helpers\InputSimulation.cs" />
+    <Compile Include="Helpers\Window.cs" />
     <Page Include="PageSwitcher.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
