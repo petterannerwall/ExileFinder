@@ -54,7 +54,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppStore.cs" />
     <Compile Include="ISwitchable.cs" />
+    <Compile Include="Models\CharacterClass.cs" />
+    <Compile Include="Models\Characters.cs" />
+    <Compile Include="Models\Party.cs" />
+    <Compile Include="Models\CharacterType.cs" />
+    <Compile Include="Models\PartyType.cs" />
+    <Compile Include="Parts\List.xaml.cs">
+      <DependentUpon>List.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Parts\Profile.xaml.cs">
       <DependentUpon>Profile.xaml</DependentUpon>
     </Compile>
@@ -77,6 +86,10 @@
       <DependentUpon>PageSwitcher.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Parts\List.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Parts\Profile.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,6 +122,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

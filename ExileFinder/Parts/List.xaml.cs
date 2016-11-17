@@ -12,17 +12,31 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ExileFinder.Models;
 
 namespace ExileFinder.Parts
 {
     /// <summary>
-    /// Interaction logic for Start.xaml
+    /// Interaction logic for List.xaml
     /// </summary>
-    public partial class Profile : UserControl
+    public partial class List : UserControl
     {
-        public Profile()
+        private List<Party> partyList; 
+
+        public List()
         {
             InitializeComponent();
+
+            partyList = new List<Party>();
+
+            partyList.Add(new Party("Come map with us!",PartyType.Maps));
+            partyList.Add(new Party("Come farm Piety!",PartyType.Bosses));
+            partyList.Add(new Party("Lets level together.",PartyType.Leveling));
+            partyList.Add(new Party("Dominus and Piery Boost",PartyType.Other));
+            partyList.Add(new Party("High maps, 85+",PartyType.Maps));
+
+            ListBox.ItemsSource = partyList;
+
         }
 
         private void BackButton_OnClick(object sender, RoutedEventArgs e)

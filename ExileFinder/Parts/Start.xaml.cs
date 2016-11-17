@@ -29,5 +29,10 @@ namespace ExileFinder.Parts
         {
             Switcher.Switch(new Profile());
         }
+
+        private void partyButton_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new List());
+        }
     }
 }

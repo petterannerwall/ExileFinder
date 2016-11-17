@@ -19,7 +19,11 @@
         <Style TargetType="Button">
             <Setter Property="Background" Value="#FF3E3E3E"></Setter>
             <Setter Property="Foreground" Value="White"></Setter>
-            <Setter Property="Margin" Value="495,270,0,0"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF868686"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
     </Window.Resources>
     <Grid></Grid>
