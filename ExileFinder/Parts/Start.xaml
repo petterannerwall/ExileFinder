@@ -8,7 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="580">
     <Grid>
         <Label x:Name="label" Content="Start View" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.337,0.273" Width="280" Foreground="White" FontFamily="Roboto" FontSize="18.6666666666667"/>
-        <Button x:Name="partyButton" Content="Find Party" HorizontalAlignment="Left" Margin="250,54,0,0" VerticalAlignment="Top" Width="75" Click="partyButton_Click"/>
+        <Button x:Name="verifyButton" Content="Verify" HorizontalAlignment="Left" Margin="250,54,0,0" VerticalAlignment="Top" Width="75" Click="partyButton_Click"/>
 
 
     </Grid>

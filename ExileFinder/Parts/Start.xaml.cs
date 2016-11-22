@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ExileFinder.Helpers;
 
 namespace ExileFinder.Parts
 {
@@ -32,7 +33,12 @@ namespace ExileFinder.Parts
 
         private void partyButton_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new List());
+            //Switcher.Switch(new List());
+
+
+            var ver = new Verifier("C:\\Program Files (x86)\\Grinding Gear Games\\Path of Exile\\logs");
+            ver.VerifyCharacter("EtheralCorona");
+
         }
     }
 }

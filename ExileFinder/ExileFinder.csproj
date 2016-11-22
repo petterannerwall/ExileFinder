@@ -55,6 +55,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppStore.cs" />
+    <Compile Include="Helpers\Verifier.cs" />
     <Compile Include="ISwitchable.cs" />
     <Compile Include="Models\CharacterClass.cs" />
     <Compile Include="Models\Characters.cs" />
